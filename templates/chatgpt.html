@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} MediAI {% endblock %}
+{% block ico %} 
+<link rel="icon" href="{% static 'favicon.ico' %}" type="image/x-icon">
+{% endblock %}
+{% block header %}
+    <h2 class="text-light">MediAI</h2>
+{% endblock %}
+
+{% block style %}
+    <link rel="stylesheet" href="{% static 'css/chatgpt.css' %}">
+{% endblock %}
+{% block content %}
+<section class="msger">
+    <!--聊天 block-->
+    <div class="msger-chat">
+
+    </div>
+    <!--聊天 block-->
+
+    <div class="msger-inputarea">
+        <input type="text" class="msger-input" id="msg" placeholder="說些什麼吧～">
+        <button type="button" class="msger-send-btn" id="send">Submit</button>
+    </div>
+</section>
+
+<script src="{% static 'js/chatgpt.js' %}"></script>
+{% endblock %}

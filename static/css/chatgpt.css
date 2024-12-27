@@ -1,0 +1,76 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.msger {
+    display: flex;
+    flex-direction: column;
+    min-height: 85%;
+    align-items: center; /* Center horizontally */
+}
+
+.msger-chat {
+    width: 80%;
+    flex: 1;
+    overflow-y: auto;
+    border: 1px solid #acacac; /* Optional: Add border for visual effect */
+    padding: 10px; /* Optional: Add padding for visual effect */
+    margin: 10px;
+    position: relative; /* 確保 .chat_box 有相對定位 */
+}
+.msger-chat .loading {
+    font-size: 16px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+.msger-chat .answer_message {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    background: #fff;
+}
+
+.msger-inputarea {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between textarea and button */
+    box-sizing: border-box;
+    margin-bottom: 10px; /* Remove margin to align properly */
+}
+.msger-input {
+    width: 100%; /* Adjust width as needed */
+    height: 45px; /* Adjust height */
+    box-sizing: border-box;
+    font-size: 20px; /* Adjust font size */
+    line-height: 20px; /* Ensure text is centered */
+    padding: 10px;
+    margin: 0px;
+    overflow: hidden;
+    resize: none;
+}
+
+.msger-send-btn {
+    height: 50px; /* Match the height of textarea */
+    font-size: 20px; /* Adjust font size for button */
+    padding: 0 25px; /* Horizontal padding */
+    margin: 0 0 0 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px; /* Optional: Add rounded corners */
+    background-color: #aaaaaa; /* 按鈕背景色 */
+    color: white; /* 按鈕文字色 */
+    transition: background-color 0.1s ease; /* 加入過渡效果 */
+}
+/* 當按鈕被滑鼠懸停時變色 */
+.msger-send-btn:hover {
+    background-color: #aaaaaa; /* 滑鼠懸停時的背景色 */
+}
+/* 當按鈕被點擊時的樣式 */
+.msger-send-btn:active {
+    background-color: #888888; /* 點擊時的背景色 */
+}
+
